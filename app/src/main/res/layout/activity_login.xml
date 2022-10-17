@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/title_login_now"
+        android:textColor="@color/quiz_blue"
+        android:textSize="25sp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/login_subtitile"
+        android:textAlignment="center"
+        android:textColor="@color/quiz_blue"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/tv_heading"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading" />
+
+
+    <EditText
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_light"
+        android:textAlignment="textStart"
+        android:textColor="@color/quiz_blue"
+        android:background="@drawable/form_fields_bg"
+        android:padding="12dp"
+        android:hint="@string/email"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subheading" />
+
+
+    <EditText
+        android:id="@+id/tv_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_light"
+        android:textAlignment="textStart"
+        android:textColor="@color/quiz_blue"
+        android:background="@drawable/form_fields_bg"
+        android:padding="12dp"
+        android:hint="@string/password"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_email"
+        app:layout_constraintStart_toStartOf="@+id/tv_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+
+    <RelativeLayout
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_bg"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password">
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/txt_login"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_havnt_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="@font/nunito_bold"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_dont_have_an_account"
+        android:textAlignment="center"
+        android:textColor="@color/quiz_blue"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_red_wave"
+        android:scaleType="centerCrop"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

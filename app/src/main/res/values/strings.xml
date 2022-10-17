@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="welcome_to_quiz_master">Welcome to Quiz Master</string>
+    <string name="quiz_intro_desc">Lets play quiz and rewire your brain</string>
+    <string name="txt_get_started">GET STARTED</string>
+    <string name="txt_dont_have_an_account">Don\'t have an account? Sign Up</string>
+    <string name="txt_already_have_an_account">Already have an account? Login</string>
+    <string name="title_login_now">Login Now</string>
+    <string name="txt_login">LOG IN</string>
+    <string name="txt_sign_up">SIGN UP</string>
+    <string name="login_subtitile">Please login to continue using app</string>
+    <string name="stay_connected">Stay Connected</string>
+    <string name="signup_subtitile">Enter your email address and password to get acccess to your account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+</resources>
